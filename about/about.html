@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* 🟢 Biz haqimizda */
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap");
+
+      :root {
+        --bg-color: #111;
+        --text-color: #eee;
+        --accent-color: #ffcc00;
+        --dark-accent: #cfa300;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        margin: 0;
+        padding: 0;
+      }
+
+      .about-us {
+        padding: 80px 20px;
+        background-color: #0e0e0e;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 15px;
+      }
+
+      /* Sarlavha */
+      .about-us h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 3rem;
+        text-align: center;
+        color: var(--accent-color);
+        margin-bottom: 30px;
+        position: relative;
+      }
+
+      .about-us h2::after {
+        content: "";
+        width: 80px;
+        height: 3px;
+        background: var(--accent-color);
+        display: block;
+        margin: 15px auto 0;
+      }
+
+      /* Banner rasm */
+      .about-us img {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-top: 30px;
+        box-shadow: 0 5px 30px rgba(255, 204, 0, 0.2);
+      }
+
+      /* Intro paragraf */
+      .intro {
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 30px auto 50px;
+        max-width: 800px;
+        line-height: 1.7;
+        color: #ccc;
+      }
+
+      /* Grid qism */
+      .about-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin-top: 60px;
+        align-items: flex-start;
+      }
+
+      .about-text {
+        flex: 1 1 500px;
+      }
+
+      .about-text h3 {
+        color: var(--accent-color);
+        font-size: 1.5rem;
+        margin-top: 25px;
+        font-weight: 600;
+        font-family: "Playfair Display", serif;
+      }
+
+      .about-text p {
+        font-size: 1.07rem;
+        font-weight: bold;
+        line-height: 1.8;
+        margin-top: 10px;
+        color: #bbb;
+      }
+
+      /* Image qismi gridda */
+      .about-image {
+        flex: 1 1 400px;
+        margin-top: 50px;
+      }
+
+      .about-image img {
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(255, 204, 0, 0.15);
+        transition: transform 0.3s ease;
+      }
+
+      .about-image img:hover {
+        transform: scale(1.03);
+      }
+
+      /* Statistik bloklar */
+      .stats {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+
+      .stat-item {
+        background-color: #1a1a1a;
+        padding: 30px;
+        flex: 1 1 200px;
+        text-align: center;
+        border-radius: 12px;
+        box-shadow: 0 3px 10px rgba(255, 204, 0, 0.05);
+        transition: transform 0.3s ease;
+      }
+
+      .stat-item:hover {
+        transform: translateY(-5px);
+        background-color: #222;
+      }
+
+      .stat-item h4 {
+        font-size: 2rem;
+        color: var(--accent-color);
+        margin-bottom: 10px;
+        font-family: "Playfair Display", serif;
+      }
+
+      .stat-item p {
+        font-size: 1.05rem;
+        color: #aaa;
+        font-weight: bold;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 768px) {
+        .about-grid {
+          flex-direction: column;
+        }
+
+        .stats {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .stat-item {
+          width: 100%;
+          padding: 20px;
+        }
+      }
+
+      @media (max-width: 340px) {
+        .about-grid {
+          flex-direction: column;
+        }
+
+        .stats {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .stat-item {
+          width: 100%;
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="about-us">
+      <div class="container">
+        <h2>Biz haqimizda</h2>
+        <p class="intro">
+          <strong>BarberZ</strong> — bu zamonaviy uslub va erkaklar uchun xizmat
+          ko'rsatuvchi maskan. Biz mijozlarimizga ishonch, qulaylik va yuqori
+          sifatli xizmatlar taqdim etishni maqsad qilganmiz.
+        </p>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <h3>Tariximiz</h3>
+            <p>
+              BarberX 2015-yilda tashkil topgan bo‘lib, qisqa vaqt ichida
+              minglab erkak mijozlarning ishonchini qozondi. Biz doimiy
+              yangilik, zamonaviy texnologiyalar va professionallik asosida
+              rivojlanib boryapmiz.
+            </p>
+
+            <h3>Bizning maqsadimiz</h3>
+            <p>
+              Har bir mijozga o‘zini ishonchli, jozibador va o‘ziga yoqimli his
+              qiladigan ko‘rinish berish. Sifatli xizmat, professional jamoa va
+              do‘stona muhit bizning tamoyillarimizdir.
+            </p>
+
+            <h3>Jamoamiz</h3>
+            <p>
+              BarberX ustalari — o‘z ishining ustalari, doimiy o‘rganish va
+              yangi uslublarni sinovdan o‘tkazib boradigan fidoyi mutaxassislar.
+            </p>
+          </div>
+
+          <div class="about-image">
+            <img src="/images/barberroom.jpg" alt="BarberX jamoasi" />
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat-item">
+            <h4>5000+</h4>
+            <p>Mamnun mijozlar</p>
+          </div>
+          <div class="stat-item">
+            <h4>2+</h4>
+            <p>Professional barberlar</p>
+          </div>
+          <div class="stat-item">
+            <h4>10 yil</h4>
+            <p>Tajriba</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
